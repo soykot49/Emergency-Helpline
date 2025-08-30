@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Emergency Helpline</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Emergency Helpline</title>
 </head>
-<body>
-    <header>
-        <nav class="flex  justify-between items-center p-2 bg-white-400 gap-3">
-            <div class="flex gap-2">
-                <img class="h-[50px] w-[50px]" src="./resourcs/assets/logo.png" alt="">
-                <p class="text-[15px] text-green-900 font-extrabold">Emergency<br>Service</p>
+<body class="bg-gray-50">
+  <header>
+    <nav class="flex flex-col sm:flex-row justify-between items-center p-3 bg-white shadow gap-3">
+      
+      <!-- Left side logo -->
+      <div class="flex items-center gap-2">
+        <img class="h-[50px] w-[50px]" src="./resourcs/assets/logo.png" alt="">
+        <p class="text-[15px] text-green-900 font-extrabold leading-tight">
+          Emergency<br>Service
+        </p>
+      </div>
 
-            </div>
-            <div class="flex gap-2 ">
-                <!-- heart section -->
-                <div class="px-3 py-1 rounded- bg-green-200 flex gap-2 font-bold rounded-full">
-                    <p class="heart-count" id="heartCount">0</p>
-                    <p><img class="h-[30px] w-[30px]" src="./resourcs/assets/heart.png" alt=""></p>
-                </div>
-
-
-                <!-- coin section -->
-                <div class="px-3 py-1 rounded- bg-green-300 flex gap-2 items-center rounded-full font-bold">
-                    <p class="coin-section" id="coinCount">100</p>
-                    <p><img class="h-[30px] w-[30px]" src="./resourcs/assets/coin.png" alt=""></p>
-                </div>
-                  
-                <!-- copy section -->
-                <div class="px-2 py-1 rounded- bg-green-900 flex gap-2 text-white items-center rounded-full">
-                    <p id="copyCount">0</p>
-                    <p>Copy</p>
-                </div>
-            </div>
-        </nav>
-
+      <!-- Right side counters -->
+      <div class="flex flex-wrap gap-3 justify-center sm:justify-end">
         
+        <!-- Heart section -->
+        <div class="px-3 py-1 bg-green-200 flex items-center gap-2 font-bold rounded-full">
+          <p id="heartCount">0</p>
+          <img class="h-[30px] w-[30px]" src="./resourcs/assets/heart.png" alt="">
+        </div>
 
+        <!-- Coin section -->
+        <div class="px-3 py-1 bg-green-300 flex items-center gap-2 font-bold rounded-full">
+          <p id="coinCount">100</p>
+          <img class="h-[30px] w-[30px]" src="./resourcs/assets/coin.png" alt="">
+        </div>
 
-    </header>
-
-  
-
-    
+        <!-- Copy section -->
+        <div class="px-3 py-1 bg-green-900 text-white flex items-center gap-2 font-bold rounded-full">
+          <p id="copyCount">0</p>
+          <span>Copy</span>
+        </div>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
-
-
