@@ -51,7 +51,7 @@ document.querySelectorAll(".callBtn").forEach((btn) => {
               <p class="font-semibold text-[15px]">${name}</p>
               <p class="text-gray-600 text-sm">${number}</p>
             </div>
-            <p class="text-gray-500 text-xs">${time}</p>
+            <p class=" text-xs">${time}</p>
           `;
       historyList.prepend(li);
     } else {
